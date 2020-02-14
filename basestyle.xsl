@@ -7,10 +7,10 @@
             <head>
             </head>
             <body>
-                <navigation>
-                    <a>HOME</a>
-                    <a>EVENTS</a>
-                    <a>KONTAKT</a>
+                <navigation class="navigation">
+                    <a href="#">HOME</a>
+                    <a href="#">EVENTS</a>
+                    <a href="#">KONTAKT</a>
                 </navigation>
                 <h1>This is a plain list of James Bond movie titles</h1>
             </body>
