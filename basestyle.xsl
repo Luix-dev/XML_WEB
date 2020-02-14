@@ -2,7 +2,7 @@
 
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-    <xsl:template match="/">
+    <xsl:template match="/activities">
         <html>
             <head>
                 <link rel="stylesheet" href="scss/style.css" />
@@ -17,8 +17,9 @@
                 <section>
                     <article>
                         <h1>Sportarten</h1>
+                        <br />
                         <!-- Apply Template Sportarten-->
-                        <xsl:apply-templates select="activity[starts-with(Art/text(), 'Sport')]"/>
+                        <xsl:apply-templates select="activity"/>
                     </article>
 
                     <article>
@@ -35,10 +36,12 @@
     </xsl:template>
 
     <xsl:template match="activity">
-        <xsl:value-of select="Titel" />
-        <xsl:value-of select="Beschreibung" />
-        <xsl:value-of select="Art"/>
-        <xsl:value-of select="Schwierigkeit" />
+        <div class="sportelement">
+            <xsl:value-of select="Titel" />
+            <xsl:value-of select="Beschreibung" />
+            <xsl:value-of select="Art"/>
+            <xsl:value-of select="Schwierigkeit" />
+        </div>
         <!-- Bilder -->
     </xsl:template>
 </xsl:stylesheet>

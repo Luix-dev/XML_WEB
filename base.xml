@@ -11,4 +11,25 @@
             <Art>Sport</Art>
             <Schwierigkeit>Mittel</Schwierigkeit>
         </activity>
+
+        <activity>
+            <Title>Wasserball</Title>
+            <Beschreibung>Diese <b>Sportart</b> ist spannend</Beschreibung>
+            <Art>Sport</Art>
+            <Schwierigkeit>Mittel</Schwierigkeit>
+        </activity>
+
+        <activity>
+            <Title>Aerobics</Title>
+            <Beschreibung>Diese <b>Sportart</b> ist spannend</Beschreibung>
+            <Art>Sport</Art>
+            <Schwierigkeit>Mittel</Schwierigkeit>
+        </activity>
+
+        <activity>
+            <Title>Plantschen</Title>
+            <Beschreibung>Diese <b>Sportart</b> ist spannend</Beschreibung>
+            <Art>Event</Art>
+            <Schwierigkeit>Mittel</Schwierigkeit>
+        </activity>
     </activities>

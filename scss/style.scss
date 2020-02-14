@@ -9,9 +9,12 @@ section {
 
 article {
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     align-self: center;
     justify-content: space-evenly;
+    .sportelement {
+        flex-direction: row;
+    }
 }
 
 a { 
