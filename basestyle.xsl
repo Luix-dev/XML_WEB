@@ -5,6 +5,7 @@
     <xsl:template match="/">
         <html>
             <head>
+                <link rel="stylesheet" href="scss/style.css" />
             </head>
             <body>
                 <navigation class="navigation">
