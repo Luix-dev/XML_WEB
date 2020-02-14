@@ -1,0 +1,56 @@
+<?xml version="1.0" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="activities">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="activity"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="activity">
+        <xs:complexType>
+            <xs:sequence minOccurs="1" maxOccurs="unbounded">
+                <xs:element name="Title" type="xs:string"/>
+                <!-- ComplexType für Sonderzeichen im Text --> 
+                <xs:element name="Beschreibung">
+                    <xs:complexType mixed="true">
+                        <xs:choice minOccurs="0" maxOccurs="unbounded">
+                            <xs:element name="i" type="xs:string"/>
+                            <xs:element name="b" type="xs:string"/>
+                            <xs:element name="a" type="xs:string"/>
+                        </xs:choice>
+                    </xs:complexType>
+                </xs:element>
+                <!-- Enum für die Art der Activity und der Schwierigkeit -->
+                <xs:element name="Art">
+                    <xs:simpleType>
+                        <xs:list itemType="Art"/>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="Schwierigkeit">
+                    <xs:simpleType>
+                        <xs:list itemType="Schwierigkeit"/>
+                    </xs:simpleType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:simpleType name="Art">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Event"/>
+            <xs:enumeration value="Sport"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="Schwierigkeit">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Sehr einfach"/>
+            <xs:enumeration value="Einfach"/>
+            <xs:enumeration value="Mittel"/>
+            <xs:enumeration value="Schwer"/>
+            <xs:enumeration value="Sehr schwer"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

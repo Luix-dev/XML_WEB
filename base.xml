@@ -1,8 +1,14 @@
 <?xml version="1.0" ?>
-<?xml-stylesheet type="text/xsl" href="basestyle.xsl"?>
-<blabla>
-    <blublu>
-        <title>Uga</title>
-        <jalla>Buga</jalla>
-    </blublu>
-</blabla>
+<?xml-stylesheet type="text/xsl" href="basestyle.xsl"
+    xmlns="activities.xsd"
+    targetNamespace="activities.xsd"
+    elementFormDefault="qualified"?>
+
+    <activities>
+        <activity>
+            <Title>Wasserballet</Title>
+            <Beschreibung>Diese <b>Sportart</b> ist spannend</Beschreibung>
+            <Art>Sport</Art>
+            <Schwierigkeit>Mittel</Schwierigkeit>
+        </activity>
+    </activities>
