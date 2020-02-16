@@ -15,15 +15,14 @@
                 </navigation>
 
                 <section>
+                    <h1>Sportarten</h1>
                     <article>
-                        <h1>Sportarten</h1>
-                        <br />
                         <!-- Apply Template Sportarten-->
-                        <xsl:apply-templates select="activity"/>
+                        <xsl:apply-templates select="activity[starts-with(Art/text(), 'Sport')]"/>
                     </article>
 
+                    <h1>Events</h1>
                     <article>
-                        <h1>Events</h1>
                         <!-- Apply Template Events -->
                         <xsl:apply-templates select="activity[starts-with(Art/text(), 'Event')]"/>
                     </article>
@@ -37,10 +36,10 @@
 
     <xsl:template match="activity">
         <div class="sportelement">
-            <xsl:value-of select="Titel" />
-            <xsl:value-of select="Beschreibung" />
-            <xsl:value-of select="Art"/>
-            <xsl:value-of select="Schwierigkeit" />
+            <xsl:value-of select="Title" /> <br />
+            <xsl:value-of select="Beschreibung" /> <br />
+            <xsl:value-of select="Art"/> <br />
+            <xsl:value-of select="Schwierigkeit" /> <br />
         </div>
         <!-- Bilder -->
     </xsl:template>

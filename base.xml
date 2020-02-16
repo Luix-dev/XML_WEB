@@ -27,6 +27,27 @@
         </activity>
 
         <activity>
+            <Title>Schwimmen</Title>
+            <Beschreibung>Im Pool cool schwimmen</Beschreibung>
+            <Art>Sport</Art>
+            <Schwierigkeit>Mittel</Schwierigkeit>
+        </activity>
+
+        <activity>
+            <Title>Tauchen</Title>
+            <Beschreibung>Unterwasser Spass mit <b>Bregy</b></Beschreibung>
+            <Art>Sport</Art>
+            <Schwierigkeit>Schwer</Schwierigkeit>
+        </activity>
+
+        <activity>
+            <Title>Jetski</Title>
+            <Beschreibung>Überraschungssport mit Gefahr</Beschreibung>
+            <Art>Sport</Art>
+            <Schwierigkeit>Sehr schwer</Schwierigkeit>
+        </activity>
+
+        <activity>
             <Title>Plantschen</Title>
             <Beschreibung>PLATSCH PLATSCH</Beschreibung>
             <Art>Event</Art>
