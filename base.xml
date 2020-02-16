@@ -9,7 +9,7 @@
             <Title>Wasserballett</Title>
             <Beschreibung>Diese <b>Sportart</b> ist spannend</Beschreibung>
             <Art>Sport</Art>
-            <Schwierigkeit>Mittel</Schwierigkeit>
+            <Schwierigkeit>Sehr einfach</Schwierigkeit>
         </activity>
 
         <activity>
@@ -23,7 +23,7 @@
             <Title>Aerobics</Title>
             <Beschreibung>IPSUM</Beschreibung>
             <Art>Sport</Art>
-            <Schwierigkeit>Mittel</Schwierigkeit>
+            <Schwierigkeit>Sehr schwierig</Schwierigkeit>
         </activity>
 
         <activity>

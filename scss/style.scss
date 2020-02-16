@@ -1,8 +1,11 @@
 //Variables - Colors
 $background-color: rgba(220, 253, 220, 0.571);
-$box-background: green;
-$section-background: rgb(167, 255, 167);
+$box-background: rgba(103, 255, 103, 0.578);
+$box-background-hover: rgba(140, 255, 140, 0.578);
+$section-background: rgb(212, 255, 212);
 $text-color: rgb(0, 0, 0);
+$button-background: rgba(136, 225, 136, 0.864);
+$button-background-hover: rgb(178, 240, 178);
 //Variables - Font
 $font-weights: (
     "regular": 400,
@@ -33,6 +36,8 @@ section {
     margin: 0 auto;
     background-color: $section-background;
     @include flexCenter(column);
+    box-shadow: 1px 1px 3px 3px;
+    padding: 10px;
 }
 
 article {
@@ -40,8 +45,11 @@ article {
     flex-wrap: wrap;
     width: inherit;
     .sportelement {
-        background-color: brown;
+        background-color: $box-background;
         margin: 10px;
+    }
+    .sportelement:hover {
+        background-color: $box-background-hover;
     }
 
     //Inhalt
@@ -54,15 +62,22 @@ article {
 
 navigation {
     @include flexCenter(row);
-
+    //width: 100%;
+    //position: fixed;
     a {
         padding: 50px;
         flex-direction: row;
         font-weight: weight(medium);
+        background-color: $button-background;
     }
 
     a:hover {
-        background-color: yellow;
+        background-color: $button-background-hover;
         font-weight: weight(bold);
     }
+}
+
+img {
+    height: 200px;
+    width: auto;
 }

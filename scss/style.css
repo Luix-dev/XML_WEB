@@ -7,7 +7,7 @@ body {
 section {
   width: 90%;
   margin: 0 auto;
-  background-color: #a7ffa7;
+  background-color: #d4ffd4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,6 +21,9 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-shadow: 1px 1px 3px 3px;
+          box-shadow: 1px 1px 3px 3px;
+  padding: 10px;
 }
 
 article {
@@ -43,8 +46,12 @@ article {
 }
 
 article .sportelement {
-  background-color: brown;
+  background-color: rgba(103, 255, 103, 0.578);
   margin: 10px;
+}
+
+article .sportelement:hover {
+  background-color: rgba(140, 255, 140, 0.578);
 }
 
 article h1 {
@@ -74,10 +81,16 @@ navigation a {
       -ms-flex-direction: row;
           flex-direction: row;
   font-weight: 500;
+  background-color: rgba(136, 225, 136, 0.864);
 }
 
 navigation a:hover {
-  background-color: yellow;
+  background-color: #b2f0b2;
   font-weight: 700;
+}
+
+img {
+  height: 200px;
+  width: auto;
 }
 /*# sourceMappingURL=style.css.map */

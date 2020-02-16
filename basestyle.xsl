@@ -36,10 +36,12 @@
 
     <xsl:template match="activity">
         <div class="sportelement">
-            <xsl:value-of select="Title" /> <br />
-            <xsl:value-of select="Beschreibung" /> <br />
-            <xsl:value-of select="Art"/> <br />
-            <xsl:value-of select="Schwierigkeit" /> <br />
+            <h2><xsl:value-of select="Title" /></h2>
+            <p><i><xsl:value-of select="Beschreibung" /></i></p>
+            <p>Schwierigkeit: <xsl:value-of select="Schwierigkeit" /> </p> <br />
+            <img src="bilder/Schwimmen.jpg"
+                alt="uga buga"/>
+
         </div>
         <!-- Bilder -->
     </xsl:template>
