@@ -6,6 +6,7 @@ $section-background: rgb(212, 255, 212);
 $text-color: rgb(0, 0, 0);
 $button-background: rgba(136, 225, 136, 0.864);
 $button-background-hover: rgb(178, 240, 178);
+$navigation-background: rgba(130, 193, 130, 0.837);
 //Variables - Font
 $font-weights: (
     "regular": 400,
@@ -62,18 +63,22 @@ article {
 
 navigation {
     @include flexCenter(row);
-    //width: 100%;
-    //position: fixed;
+    width: 90%;
+    margin: 0 auto;
+    background-color: $navigation-background;
     a {
         padding: 50px;
         flex-direction: row;
         font-weight: weight(medium);
         background-color: $button-background;
+        text-decoration: none;
     }
 
     a:hover {
         background-color: $button-background-hover;
         font-weight: weight(bold);
+        text-decoration: underline;
+        box-shadow: 1px 1px 1px 1px $button-background;
     }
 }
 

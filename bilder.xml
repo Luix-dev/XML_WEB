@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<images xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <single_image>
+        <id>Schwimmen</id>
+        <name>Schwimmen.jpg</name>
+    </single_image>
+
+    <single_image>
+        <id>Tauchen</id>
+        <name>Tauchen.jpg</name>
+    </single_image>
+
+    <single_image>
+        <id>Aerobics</id>
+        <name>Aerobics.jpg</name>
+    </single_image>
+
+    <single_image>
+        <id>Wasserball</id>
+        <name>Wasserball.jpg</name>
+    </single_image>
+
+    <single_image>
+        <id>Wasserballett</id>
+        <name>Wasserballett.jpg</name>
+    </single_image>
+</images>

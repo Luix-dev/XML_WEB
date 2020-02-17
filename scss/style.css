@@ -72,6 +72,9 @@ navigation {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  width: 90%;
+  margin: 0 auto;
+  background-color: rgba(130, 193, 130, 0.837);
 }
 
 navigation a {
@@ -82,11 +85,15 @@ navigation a {
           flex-direction: row;
   font-weight: 500;
   background-color: rgba(136, 225, 136, 0.864);
+  text-decoration: none;
 }
 
 navigation a:hover {
   background-color: #b2f0b2;
   font-weight: 700;
+  text-decoration: underline;
+  -webkit-box-shadow: 1px 1px 1px 1px rgba(136, 225, 136, 0.864);
+          box-shadow: 1px 1px 1px 1px rgba(136, 225, 136, 0.864);
 }
 
 img {

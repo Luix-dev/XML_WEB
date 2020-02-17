@@ -6,6 +6,7 @@
         <html>
             <head>
                 <link rel="stylesheet" href="scss/style.css" />
+                <title>Wassersport!</title>
             </head>
             <body>
                 <navigation class="navigation">
@@ -38,11 +39,17 @@
         <div class="sportelement">
             <h2><xsl:value-of select="Title" /></h2>
             <p><i><xsl:value-of select="Beschreibung" /></i></p>
-            <p>Schwierigkeit: <xsl:value-of select="Schwierigkeit" /> </p> <br />
-            <img src="bilder/Schwimmen.jpg"
+            <p>Schwierigkeit: <xsl:value-of select="Schwierigkeit" /> </p>
+            <img src="bilder/{document('bilder.xml')/images/single_image[
+                @id=(select='Title/text()')]/name}"
                 alt="uga buga"/>
 
         </div>
         <!-- Bilder -->
+    </xsl:template>
+
+    <!-- Just a test template to lead picture name with current sporttitle-->
+    <xsl:template match="images/single_image">
+        <xsl:value-of select="single_image"></xsl:value-of>
     </xsl:template>
 </xsl:stylesheet>
