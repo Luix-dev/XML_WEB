@@ -40,9 +40,10 @@
             <h2><xsl:value-of select="Title" /></h2>
             <p><i><xsl:value-of select="Beschreibung" /></i></p>
             <p>Schwierigkeit: <xsl:value-of select="Schwierigkeit" /> </p>
-            <img src="bilder/{document('bilder.xml')/images/single_image[
-                @id=(select='Title/text()')]/name}"
-                alt="uga buga"/>
+            <xsl:variable name="link" select="Title"/>
+            <xsl:variable name="alt" select="Beschreibung"/>
+            <img src="bilder/{$link}.jpg"
+                alt="{$alt}"/>
 
         </div>
         <!-- Bilder -->
