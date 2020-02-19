@@ -43,7 +43,8 @@
             <xsl:variable name="link" select="Title"/>
             <xsl:variable name="alt" select="Beschreibung"/>
             <img src="bilder/{$link}.jpg"
-                alt="{$alt}"/>
+                alt="{$alt}"
+                class="img"/>
 
         </div>
         <!-- Bilder -->

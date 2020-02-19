@@ -48,6 +48,7 @@ article {
     .sportelement {
         background-color: $box-background;
         margin: 10px;
+        max-width: 30%;
     }
     .sportelement:hover {
         background-color: $box-background-hover;
@@ -83,6 +84,9 @@ navigation {
 }
 
 img {
-    height: 200px;
-    width: auto;
+    max-height: 200px;
+    height: auto;
+    width: 100%;
+    max-width: fit-content;
+    overflow: hidden;
 }
