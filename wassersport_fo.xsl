@@ -49,6 +49,12 @@
                         <fo:block font-size="16pt" color="blue" font-weight="900" text-align="left">
                             <xsl:value-of select="Title"/>
                         </fo:block>
+                        <fo:block>
+                            Beschreibung: <xsl:value-of select="Beschreibung"/>
+                        </fo:block>
+                        <fo:block>
+                            Art: <xsl:value-of select="Art"/>
+                        </fo:block>
                     </fo:table-cell>
                     <fo:table-cell number-rows-spanned="2">
                         <fo:block>
@@ -58,19 +64,7 @@
                 </fo:table-row>
                 <fo:table-row>
                     <fo:table-cell padding-top="8pt" number-columns-spanned="2" padding-bottom="10pt">
-                        <fo:block>
-                            Beschreibung: <xsl:value-of select="Beschreibung"/>
-                        </fo:block>
-                    </fo:table-cell>
-                </fo:table-row>
-                <fo:table-row>
-                    <fo:table-cell>
-                        <fo:block>
-                            Art: <xsl:value-of select="Art"/>
-                        </fo:block>
-                    </fo:table-cell>
-                    <fo:table-cell>
-                        <fo:block>
+                        <fo:block font-weight="bold">
                             Schwierigkeit: <xsl:value-of select="Schwierigkeit"/>
                         </fo:block>
                     </fo:table-cell>
