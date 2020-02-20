@@ -45,7 +45,7 @@
             <fo:table-column column-number="3"/>
             <fo:table-body>
                 <fo:table-row height="5cm">
-                    <fo:table-cell number-columns-spanned="3">
+                    <fo:table-cell number-columns-spanned="2">
                         <fo:block font-size="16pt" color="blue" font-weight="900" text-align="left">
                             <xsl:value-of select="Title"/>
                         </fo:block>
@@ -54,6 +54,11 @@
                         </fo:block>
                         <fo:block>
                             Art: <xsl:value-of select="Art"/>
+                        </fo:block>
+                    </fo:table-cell>
+                    <fo:table-cell number-rows-spanned="2">
+                        <fo:block>
+                            <fo:external-graphic src="http://xml.enterpriselab.ch/~iastuber/bilder/{Title}.jpg" border-width="0cm" content-height="5cm" />
                         </fo:block>
                     </fo:table-cell>
                 </fo:table-row>
