@@ -1,109 +1,74 @@
 body {
-  background-color: rgba(220, 253, 220, 0.571);
-  color: black;
+  background-color: rgba(110, 230, 253, 0.57);
+  color: #0f0775;
   font-weight: 700;
 }
 
 section {
   width: 90%;
   margin: 0 auto;
-  background-color: #d4ffd4;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  background-color: rgba(104, 176, 253, 0.57);
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-shadow: 1px 1px 3px 3px;
-          box-shadow: 1px 1px 3px 3px;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 1px 1px 10px 1px;
   padding: 10px;
 }
 
 article {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
   width: inherit;
 }
-
 article .sportelement {
-  background-color: rgba(103, 255, 103, 0.578);
+  background-color: rgba(100, 135, 255, 0.58);
   margin: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   max-width: 30%;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.27);
 }
-
 article .sportelement:hover {
-  background-color: rgba(140, 255, 140, 0.578);
+  background-color: rgba(84, 114, 255, 0.58);
 }
-
-article h1 {
+article h1, article h2 {
   text-align: center;
 }
 
 navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
   width: 90%;
   margin: 0 auto;
-  background-color: rgba(130, 193, 130, 0.837);
+  background-color: rgba(91, 101, 193, 0.84);
 }
-
 navigation a {
   padding: 50px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   font-weight: 500;
-  background-color: rgba(136, 225, 136, 0.864);
+  background-color: rgba(101, 149, 225, 0.86);
   text-decoration: none;
 }
-
 navigation a:hover {
-  background-color: #b2f0b2;
+  background-color: rgba(90, 121, 225, 0.86);
   font-weight: 700;
   text-decoration: underline;
-  -webkit-box-shadow: 1px 1px 1px 1px rgba(136, 225, 136, 0.864);
-          box-shadow: 1px 1px 1px 1px rgba(136, 225, 136, 0.864);
+  box-shadow: 1px 1px 1px 1px rgba(101, 149, 225, 0.86);
 }
 
 img {
   max-height: 200px;
   height: auto;
   width: 100%;
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
   max-width: fit-content;
   overflow: hidden;
 }
+
 /*# sourceMappingURL=style.css.map */

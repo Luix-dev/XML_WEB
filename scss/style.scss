@@ -1,12 +1,12 @@
 //Variables - Colors
-$background-color: rgba(220, 253, 220, 0.571);
-$box-background: rgba(103, 255, 103, 0.578);
-$box-background-hover: rgba(140, 255, 140, 0.578);
-$section-background: rgb(212, 255, 212);
-$text-color: rgb(0, 0, 0);
-$button-background: rgba(136, 225, 136, 0.864);
-$button-background-hover: rgb(178, 240, 178);
-$navigation-background: rgba(130, 193, 130, 0.837);
+$background-color: rgba(110, 230, 253, 0.57);
+$box-background: rgba(100, 135, 255, 0.58);
+$box-background-hover: rgba(84, 114, 255, 0.58);
+$section-background: rgba(104, 176, 253, 0.57);
+$text-color: rgb(15, 7, 117);
+$button-background: rgba(101, 149, 225, 0.86);
+$button-background-hover: rgba(90, 121, 225, 0.86);
+$navigation-background: rgba(91, 101, 193, 0.84);
 //Variables - Font
 $font-weights: (
     "regular": 400,
@@ -37,7 +37,7 @@ section {
     margin: 0 auto;
     background-color: $section-background;
     @include flexCenter(column);
-    box-shadow: 1px 1px 3px 3px;
+    box-shadow: 1px 1px 10px 1px;
     padding: 10px;
 }
 
@@ -45,20 +45,26 @@ article {
     @include flexCenter(row);
     flex-wrap: wrap;
     width: inherit;
+
     .sportelement {
         background-color: $box-background;
         margin: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
         max-width: 30%;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.27);
     }
+
+
     .sportelement:hover {
         background-color: $box-background-hover;
     }
 
     //Inhalt
-    h1 {
+    h1, h2 {
         text-align: center;
     }
-
 }
 
 
