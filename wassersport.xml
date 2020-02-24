@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<?xml-stylesheet type="text/xsl" href="wassersport_style.xsl"
+<?xml-stylesheet type="text/xsl" href="wassersport_pie.xsl"
     xmlns="activities.xsd"
     targetNamespace="activities.xsd"
     elementFormDefault="qualified"?>
@@ -10,6 +10,7 @@
             <Beschreibung>Diese <b>Sportart</b> ist spannend</Beschreibung>
             <Art>Sport</Art>
             <Schwierigkeit>Sehr einfach</Schwierigkeit>
+            <Vote>10</Vote>
         </activity>
 
         <activity>
@@ -17,6 +18,7 @@
             <Beschreibung>LOREM</Beschreibung>
             <Art>Sport</Art>
             <Schwierigkeit>Mittel</Schwierigkeit>
+            <Vote>15</Vote>
         </activity>
 
         <activity>
@@ -24,6 +26,7 @@
             <Beschreibung>IPSUM</Beschreibung>
             <Art>Sport</Art>
             <Schwierigkeit>Sehr schwierig</Schwierigkeit>
+            <Vote>5</Vote>
         </activity>
 
         <activity>
@@ -31,6 +34,7 @@
             <Beschreibung>Im Pool cool schwimmen</Beschreibung>
             <Art>Sport</Art>
             <Schwierigkeit>Mittel</Schwierigkeit>
+            <Vote>0</Vote>
         </activity>
 
         <activity>
@@ -38,6 +42,7 @@
             <Beschreibung>Unterwasser Spass mit <b>Bregy</b></Beschreibung>
             <Art>Sport</Art>
             <Schwierigkeit>Schwer</Schwierigkeit>
+            <Vote>20</Vote>
         </activity>
 
         <activity>
@@ -45,6 +50,7 @@
             <Beschreibung>Überraschungssport mit Gefahr</Beschreibung>
             <Art>Sport</Art>
             <Schwierigkeit>Sehr schwer</Schwierigkeit>
+            <Vote>4</Vote>
         </activity>
 
         <activity>
@@ -54,6 +60,7 @@
             </Beschreibung>
             <Art>Sport</Art>
             <Schwierigkeit>Sehr schwer</Schwierigkeit>
+            <Vote>12</Vote>
         </activity>
 
         <activity>
@@ -64,6 +71,7 @@
             </Beschreibung>
             <Art>Event</Art>
             <Schwierigkeit>Mittel</Schwierigkeit>
+            <Vote>9</Vote>
         </activity>
 
         <activity>
@@ -73,5 +81,6 @@
                 Kommt vorbei und last euch überraschen &lt;3</Beschreibung>
             <Art>Event</Art>
             <Schwierigkeit>Sehr einfach</Schwierigkeit>
+            <Vote>20</Vote>
         </activity>
     </activities>
