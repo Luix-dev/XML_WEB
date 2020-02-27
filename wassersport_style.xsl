@@ -280,4 +280,4 @@
     <xsl:template match="images/single_image">
         <xsl:value-of select="single_image"></xsl:value-of>
     </xsl:template>
-</xsl:stylesheet>
+</xsl:stylesheet>   

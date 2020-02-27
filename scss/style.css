@@ -96,7 +96,7 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0 auto;
+  margin: 0;
   background-color: rgba(232, 255, 252, 0.84);
   -webkit-box-pack: start;
       -ms-flex-pack: start;

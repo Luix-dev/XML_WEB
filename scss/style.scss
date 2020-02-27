@@ -86,7 +86,7 @@ img {
 
 .sidenav {
     @include flexCenter(column);
-    margin: 0 auto;
+    margin: 0;
     background-color: $navigation-background;
     justify-content: flex-start;
     .flex-column {
