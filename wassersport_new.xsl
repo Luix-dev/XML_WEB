@@ -26,17 +26,20 @@
             <div class="col-sm-3 sidenav navigation">
               <h4>XML Blockwoche</h4>
               <ul class="nav flex-column">
+                <li>
+                  <a href="./index.html">HOME</a>
+                </li>
                 <li class="active">
-                  <a href="#section1">HOME</a>
+                  <a href="#">ANGEBOT</a>
                 </li>
                 <li>
-                  <a href="#section2">EVENTS</a>
+                  <a href="./events.xml">EVENTS</a>
                 </li>
                 <li>
-                  <a href="#section3">RESERVATION</a>
+                  <a href="./reservation.xml">RESERVATION</a>
                 </li>
                 <li>
-                  <a href="#section3">ABOUT</a>
+                  <a href="./about.html">ABOUT</a>
                 </li>
               </ul>
               <br />

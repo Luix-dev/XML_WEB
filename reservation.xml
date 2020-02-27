@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="reservation.xsl"
+    xmlns="reservations.xsd"
+    targetNamespace="reservations.xsd"
+    elementFormDefault="qualified"?>
+
+    <reservations>
+        <!-- Werden vom PHP generiert und bei Reservierung eingefügt -->
+    </reservations>
