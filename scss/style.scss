@@ -111,6 +111,27 @@ img {
     }
 }
 
+.tilt {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+
+  border: 10px solid #fff;
+  background-color: white;
+  float: left;
+  margin-right: 15px;
+}
+
+.tilt:hover {
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
+
 /* Set black background color, white text and some padding */
 footer {
   background-color: #555;
