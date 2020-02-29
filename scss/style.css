@@ -7,21 +7,41 @@ body {
 section {
   width: 100%;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 10px;
 }
 
 article {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: inherit;
 }
+
 article .sportelement {
   background-color: rgba(100, 135, 255, 0.58);
   margin: 10px;
@@ -29,14 +49,18 @@ article .sportelement {
   max-width: 30%;
   min-width: 350px;
   border-radius: 15px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.27);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.27);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.27);
 }
+
 article .sportelement:hover {
   background-color: rgba(84, 114, 255, 0.58);
 }
+
 article h1, article h2 {
   text-align: center;
 }
+
 article img {
   border-radius: 0px 0px 5px 5px;
 }
@@ -45,16 +69,83 @@ img {
   max-height: 200px;
   height: auto;
   width: 100%;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
   max-width: fit-content;
   overflow: hidden;
 }
 
+.room {
+  background-color: rgba(100, 135, 255, 0.58);
+  margin: 10px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.27);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.27);
+  text-align: center;
+  width: 50%;
+  border-radius: 15px;
+}
+
+.room img {
+  max-height: 50px;
+  max-width: 50px;
+  overflow: hidden;
+  margin: 0;
+}
+
+.room ul {
+  list-style: none;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+
+.room ul li {
+  display: inline-block;
+  width: 40%;
+}
+
+.room ul li p {
+  display: inline-block;
+  padding-left: 10;
+}
+
+.room .icon {
+  max-height: 15px;
+  max-width: 15px;
+  overflow: hidden;
+  margin: 0;
+  display: inline-block;
+}
+
+.room .raumbeschreibung {
+  width: 70%;
+  float: left;
+}
+
+.room .raumaktionen {
+  width: 30%;
+  float: left;
+}
+
+.room .raumaktionen p {
+  margin-top: 20;
+}
+
+.room .raumaktionen button {
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid black;
+}
+
 .row.content {
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .sidenav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
@@ -67,38 +158,41 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 0;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: column;
-  margin: 0 auto;
   background-color: rgba(232, 255, 252, 0.84);
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
+
 .sidenav .flex-column {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .sidenav h2 {
   padding-top: 10px;
-  align-self: flex-start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
+
 .sidenav a {
   font-weight: 500;
   text-decoration: none;
   max-width: 40%;
   padding-top: 10px;
 }
+
 .sidenav a:hover {
   background-color: rgba(90, 121, 225, 0.86);
   font-weight: 700;
   text-decoration: underline;
-  box-shadow: 1px 1px 1px 1px rgba(101, 149, 225, 0.86);
+  -webkit-box-shadow: 1px 1px 1px 1px rgba(101, 149, 225, 0.86);
+          box-shadow: 1px 1px 1px 1px rgba(101, 149, 225, 0.86);
 }
 
 .tilt {
   -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
   transition: all 0.5s ease;
   border: 10px solid #fff;
   background-color: white;
@@ -108,9 +202,6 @@ img {
 
 .tilt:hover {
   -webkit-transform: rotate(-5deg);
-  -moz-transform: rotate(-5deg);
-  -o-transform: rotate(-5deg);
-  -ms-transform: rotate(-5deg);
   transform: rotate(-5deg);
 }
 
@@ -127,16 +218,29 @@ footer {
 /* On small screens, set height to 'auto' for sidenav and grid */
 @media screen and (max-width: 900px) {
   .sidenav {
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     height: auto;
     padding: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .sidenav .flex-column {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .sidenav h2 {
     padding-top: 10px;
@@ -151,11 +255,11 @@ footer {
     background-color: rgba(90, 121, 225, 0.86);
     font-weight: 700;
     text-decoration: underline;
-    box-shadow: 1px 1px 1px 1px rgba(101, 149, 225, 0.86);
+    -webkit-box-shadow: 1px 1px 1px 1px rgba(101, 149, 225, 0.86);
+            box-shadow: 1px 1px 1px 1px rgba(101, 149, 225, 0.86);
   }
   .sidenav .row.content {
     height: auto;
   }
 }
-
 /*# sourceMappingURL=style.css.map */

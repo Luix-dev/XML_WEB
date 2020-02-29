@@ -1,6 +1,9 @@
 <?xml version="1.0" ?>
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-    <xsl:template match="/reservations">
+<xsl:stylesheet 
+    version="1.0" 
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:nsm="https://stahlreck.internet-box.ch/xml/reservations">
+    <xsl:template match="/nsm:rooms">
             <html lang="en">
             <!-- Header mit meta und Links-->
             <head>
@@ -51,7 +54,7 @@
                 
                             <section>
                                 <h2>Buchen Sie sich jetzt ihr bequemes Zimmer!</h2>
-                                <p>Platzhalter: Hier kommt die Zimmerreservations hin</p>
+                                <xsl:apply-templates select="nsm:room" />
                                 <h2>Sie können ebenfalls eine unserer Hallen nur für sich und ihre Gruppe reservieren!</h2>
                                 <p>Platzhalter (optional): Reservation von Sporthallen wenn nötig?</p>
                             </section>
@@ -65,4 +68,67 @@
             </body>
         </html>
     </xsl:template>
+    <!--<xsl:template match="nsm:room">
+        <tr>
+            <td>
+                <xsl:value-of select="@number" />
+            </td>
+            <td>
+                <xsl:value-of select="nsm:category" />
+            </td>
+            <td>
+                <xsl:value-of select="nsm:size" /> m<sup>2</sup>
+            </td>
+            <td>
+                <xsl:if test="@accessibility = 'true'">
+                    <img src="bilder/accessible.png" alt="Behindertengerecht" />
+                </xsl:if>
+                <xsl:if test="@accessibility = 'false'">
+                    <img src="bilder/not-accessible.png" alt="Nicht behindertengerecht" />
+                </xsl:if>
+            </td>
+            <td>
+                <xsl:value-of select="nsm:reservationStatus" />
+            </td>
+            <td>Zimmer reservieren</td>
+        </tr>
+    </xsl:template>-->
+    <xsl:template match="nsm:room">
+    <div class="room">
+        <h2>Zimmer <xsl:value-of select="@number" /></h2>
+        <div class="raumbeschreibung">
+            <ul>
+                <li>
+                    <img class="icon" src="bilder/zimmericons/person.png" alt="Zimmerkategorie" />
+                    <p><xsl:value-of select="nsm:category" /></p>
+                </li>
+                <li>
+                    <img class="icon" src="bilder/zimmericons/size.png" alt="Zimmergrösse" />
+                    <p><xsl:value-of select="nsm:size" /> m<sup>2</sup></p>
+                </li>
+                <li>
+                    <xsl:if test="@accessibility = 'true'">
+                        <img src="bilder/zimmericons/accessible.png" alt="Behindertengerecht" />
+                    </xsl:if>
+                    <xsl:if test="@accessibility = 'false'">
+                    <img src="bilder/zimmericons/not-accessible.png" alt="Nicht behindertengerecht" />
+                    </xsl:if>
+                </li>
+                <li>
+                    <xsl:if test="nsm:reservationStatus = 'Verfügbar'">
+                        <img class="icon" src="bilder/zimmericons/check.png" alt="Verfügbar" />
+                    </xsl:if>
+                    <xsl:if test="nsm:reservationStatus = 'Belegt'">
+                        <img class="icon" src="bilder/zimmericons/kreuz.png" alt="Belegt" />
+                    </xsl:if>
+                    <p><xsl:value-of select="nsm:reservationStatus" /></p>
+                </li>
+            </ul>
+        </div>
+        <div class="raumaktionen">
+            <button type="button">Zimmer reservieren</button>
+            <p>Mehr anzeigen...</p>
+        </div>
+    </div>
+  </xsl:template>
 </xsl:stylesheet>

@@ -7,6 +7,7 @@ $text-color: rgb(15, 7, 117);
 $button-background: rgba(101, 149, 225, 0.86);
 $button-background-hover: rgba(90, 121, 225, 0.86);
 $navigation-background: rgba(232, 255, 252, 0.84);
+$box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.27);
 //Variables - Font
 $font-weights: (
     "regular": 400,
@@ -51,7 +52,7 @@ article {
         max-width: 30%;
         min-width: 350px;
         border-radius: 15px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.27);
+        box-shadow: $box-shadow;
     }
 
 
@@ -76,6 +77,56 @@ img {
     width: 100%;
     max-width: fit-content;
     overflow: hidden;
+}
+
+.room {
+    background-color: $box-background;
+    margin: 10px;
+    box-shadow: $box-shadow;
+    text-align: center;
+    width: 50%;
+    border-radius: 15px;
+    img {
+        max-height: 50px;
+        max-width: 50px;
+        overflow: hidden;
+        margin: 0;
+    }
+    ul {
+        list-style: none;
+        padding-inline-start: 0;
+        li {
+            display: inline-block;
+            width: 40%;
+            p{
+                display: inline-block;
+                padding-left: 10;
+            }
+        }
+    }
+    .icon {
+        max-height: 15px;
+        max-width: 15px;
+        overflow: hidden;
+        margin: 0;
+        display: inline-block;
+    }
+    .raumbeschreibung {
+        width: 70%;
+        float: left;
+    }
+    .raumaktionen {
+        width: 30%;
+        float: left;
+        p {
+            margin-top: 20;
+        }
+        button {
+            border-radius: 5px;
+            background-color: white;
+            border: 1px solid black;
+        }
+    }
 }
 
 .row.content {
