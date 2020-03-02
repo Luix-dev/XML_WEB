@@ -1,10 +1,14 @@
 ToDo:
-Flag fuer Sportarten die Blindengerecht sind!
---> Ist das der Schwierigkeitsgrad? Schwierigkeitsgrad der Sportarten
-Wie testen wir den Audioreader? Audio Bilder UND Navigation
+-- Wie testen wir den Audioreader? 
+-- Bilder UND Navigation
 
-PHP XML Laden
-Abstimmung --> aus XML zuSVG darstellen --> In XML schreibenn
-FO erstellen
-Anmeldeformular
-Mail senden mit gewaehltem Format
+-- PHP XML Laden
+
+-- Abstimmung --> In XML schreiben
+-- aus XML zu SVG darstellen
+
+-- Anmeldeformular Sport
+-- Reservation Zimmer
+-- Mail senden mit gewaehltem Format
+
+-- Von Sport zu reservation
