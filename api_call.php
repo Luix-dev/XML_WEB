@@ -11,7 +11,7 @@
 
     // load XSL
     $xsl = new DOMDocument();
-    $xsl->load('wassersport_fo.xsl');
+    $xsl->load('xsl/wassersport_fo.xsl');
 
     // transform
     $processor = new XSLTProcessor();

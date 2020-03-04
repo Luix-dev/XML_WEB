@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<?xml-stylesheet type="text/xsl" href="wassersport_new.xsl"
+<?xml-stylesheet type="text/xsl" href="xsl/wassersport_new.xsl"
     xmlns="activities.xsd"
     targetNamespace="activities.xsd"
     elementFormDefault="qualified"?>
