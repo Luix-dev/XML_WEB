@@ -28,4 +28,5 @@ $child->addChild("email", $email);
 $child->addChild("sport", $sport);
 $child->addChild("reservationDate", $date);
 $rooms->asXML("./reservation.xml");
+header('Location: reservation.xml');
 ?>
