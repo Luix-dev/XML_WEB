@@ -7,7 +7,7 @@
     <room number="01" accessibility="false">
         <size>14</size>
         <category>Einzelzimmer</category>
-        <reservationStatus>Belegt</reservationStatus>
+        <reservationStatus>Verfügbar</reservationStatus>
         <accessibilityDesc>Nicht behindertengerecht</accessibilityDesc>
         <reservation></reservation>
     </room>

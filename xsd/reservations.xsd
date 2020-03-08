@@ -40,8 +40,13 @@
             <xs:sequence minOccurs="0" maxOccurs="1">
                 <xs:element name="name" type="xs:string" />
                 <xs:element name="surname" type="xs:string" />
-                <xs:element name="country" type="xs:string" />
+                <xs:element name="gender" type="xs:string" />
+                <xs:element name="ort" type="xs:string" />
+                <xs:element name="plz" type="xs:positiveInteger" />
+                <xs:element name="address" type="xs:string" />
                 <xs:element name="tel" type="xs:positiveInteger" />
+                <xs:element name="email" type="xs:string" />
+                <xs:element name="sport" type="xs:string" />
                 <xs:element name="reservationDate" type="xs:dateTime" />
             </xs:sequence>
         </xs:complexType>

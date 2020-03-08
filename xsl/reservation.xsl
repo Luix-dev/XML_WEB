@@ -4,7 +4,7 @@
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:nsm="https://stahlreck.internet-box.ch/xml/reservations">
     <xsl:template match="/nsm:rooms">
-            <html lang="en">
+        <html lang="en">
             <!-- Header mit meta und Links-->
             <head>
                 <title>Wassersport!</title>
@@ -18,6 +18,8 @@
                         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
                 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
                         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+                <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>                     
                 <link rel="stylesheet" href="scss/style.css" />
                 <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
             </head>
@@ -61,38 +63,9 @@
                         </div>
                     </div>
                 </div>
-
-                <footer class="container-fluid">
-                    <p>Footer Text</p>
-                </footer>
             </body>
         </html>
     </xsl:template>
-    <!--<xsl:template match="nsm:room">
-        <tr>
-            <td>
-                <xsl:value-of select="@number" />
-            </td>
-            <td>
-                <xsl:value-of select="nsm:category" />
-            </td>
-            <td>
-                <xsl:value-of select="nsm:size" /> m<sup>2</sup>
-            </td>
-            <td>
-                <xsl:if test="@accessibility = 'true'">
-                    <img src="bilder/accessible.png" alt="Behindertengerecht" />
-                </xsl:if>
-                <xsl:if test="@accessibility = 'false'">
-                    <img src="bilder/not-accessible.png" alt="Nicht behindertengerecht" />
-                </xsl:if>
-            </td>
-            <td>
-                <xsl:value-of select="nsm:reservationStatus" />
-            </td>
-            <td>Zimmer reservieren</td>
-        </tr>
-    </xsl:template>-->
     <xsl:template match="nsm:room">
     <div class="room">
         <h2>Zimmer <xsl:value-of select="@number" /></h2>
@@ -126,8 +99,41 @@
             </ul>
         </div>
         <div class="raumaktionen">
-            <button type="button">Zimmer reservieren</button>
-            <p>Mehr anzeigen...</p>
+            <xsl:variable name="roomID" select="@number" />
+            <button type="button" onclick="window.location='reservationform.php?roomid={$roomID}'">Zimmer reservieren</button>
+            <a data-fancybox="" data-src="#hidden-content" href="javascript:;">Mehr anzeigen...</a>
+        </div>
+        <div class="more-content">
+            <div style="display: none;" id="hidden-content">
+                <h2>Zimmer <xsl:value-of select="@number" /></h2>
+                <div>
+                    <p><xsl:value-of select="nsm:category" /></p>
+                </div>
+                <div>
+                    <p><xsl:value-of select="nsm:size" /> m<sup>2</sup></p>
+                </div>
+                <div>
+                    <xsl:if test="@accessibility = 'true'">
+                        <img src="bilder/zimmericons/accessible.png" alt="Behindertengerecht" />
+                    </xsl:if>
+                    <xsl:if test="@accessibility = 'false'">
+                        <img src="bilder/zimmericons/not-accessible.png" alt="Nicht behindertengerecht" />
+                    </xsl:if>
+                </div>
+                <div>
+                    <xsl:if test="nsm:reservationStatus = 'Verfügbar'">
+                        <img class="icon" src="bilder/zimmericons/check.png" alt="Verfügbar" />
+                    </xsl:if>
+                    <xsl:if test="nsm:reservationStatus = 'Belegt'">
+                        <img class="icon" src="bilder/zimmericons/kreuz.png" alt="Belegt" />
+                    </xsl:if>
+                    <p><xsl:value-of select="nsm:reservationStatus" /></p>
+                </div>
+                <div class="raumaktionen">
+                    <xsl:variable name="roomID" select="@number" />
+                    <button type="button" onclick="window.location='reservationform.php?roomid=$roomID'">Zimmer reservieren</button>
+                </div>
+            </div>
         </div>
     </div>
   </xsl:template>
