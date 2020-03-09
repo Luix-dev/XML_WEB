@@ -9,7 +9,7 @@
 <xsl:template match="activities">
 
 	<svg:svg>
-		<svg:text font-size="24" fill="red" x="50" y="50">
+		<svg:text font-size="24" fill="blue" x="50" y="50">
 			Abstimmung Events:
 		</svg:text>
 		
