@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-<xsl:template match="/events">
+<xsl:template match="/">
             <html lang="en">
             <!-- Header mit meta und Links-->
             <head>
@@ -15,6 +15,25 @@
                         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
                 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
                         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+                <script xmlns="http://www.w3.org/1999/xhtml"><![CDATA[
+                            function get_votes(int) {
+                            if (window.XMLHttpRequest) {
+                                // script for browser version above IE 7 and the other popular browsers (newer browsers)
+                                xmlhttpreq = new XMLHttpRequest();
+                            } else {  
+                                // script for the IE 5 and 6 browsers (older versions)
+                                xmlhttpreq = new ActiveXObject("Microsoft.XMLHTTP");
+                            }
+                            xmlhttpreq.onreadystatechange = function() {
+                              //check if server response is ready  
+                              if (this.readyState == 4 && this.status==200) {
+                                document.getElementById("ajax_poll").innerHTML=this.responseText;
+                              }
+                            }
+                            xmlhttpreq.open("GET","poll_votes.php?res="+int,true);
+                            xmlhttpreq.send();
+                          }
+                ]]></script>
                 <link rel="stylesheet" href="scss/style.css" />
                 <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
             </head>
@@ -51,7 +70,16 @@
                 
                             <section>
                                 <h2>Umfrage</h2>
-                                <p>Platzhalter: SVG</p>
+                                <div id="ajax_poll">
+                                    <form>
+                                        <h4><xsl:value-of select="(//Title)[1]"/></h4>
+                                        <input type="radio" name="res" value="0" onclick="get_votes(this.value)"></input>                      
+                                        <h4><xsl:value-of select="(//Title)[2]"/></h4>
+                                        <input type="radio" name="res" value="1" onclick="get_votes(this.value)"></input>
+                                        <h4><xsl:value-of select="(//Title)[3]"/></h4>
+                                        <input type="radio" name="res" value="2" onclick="get_votes(this.value)"></input>
+                                    </form>
+                                </div>
                                 <h2>Events</h2>
                                 <p>Platzhalter: Aktuelle events</p>
                             </section>
