@@ -11,7 +11,6 @@
                 Lernen Sie, sich graziös im Wasser zu bewegen. Keine Vorkenntnisse von Nöten</Beschreibung>
             <Art>Sport</Art>
             <Schwierigkeit>Sehr einfach</Schwierigkeit>
-            <Vote>10</Vote>
         </activity>
 
         <activity>
@@ -21,7 +20,6 @@
                 Spass vorprogrammiert</Beschreibung>
             <Art>Sport</Art>
             <Schwierigkeit>Mittel</Schwierigkeit>
-            <Vote>15</Vote>
         </activity>
 
         <activity>
@@ -29,7 +27,6 @@
             <Beschreibung>Testen Sie ihre Beweglichkeit im Wasser</Beschreibung>
             <Art>Sport</Art>
             <Schwierigkeit>Sehr schwierig</Schwierigkeit>
-            <Vote>5</Vote>
         </activity>
 
         <activity>
@@ -38,7 +35,6 @@
                 mit in Ihrer eigenen Geschwindigkeit und geniessen Sie das warme Wasser</Beschreibung>
             <Art>Sport</Art>
             <Schwierigkeit>Mittel</Schwierigkeit>
-            <Vote>0</Vote>
         </activity>
 
         <activity>
@@ -46,7 +42,6 @@
             <Beschreibung>Unterwasser Spass mit <b>Bregy</b></Beschreibung>
             <Art>Sport</Art>
             <Schwierigkeit>Schwer</Schwierigkeit>
-            <Vote>20</Vote>
         </activity>
 
         <activity>
@@ -54,7 +49,6 @@
             <Beschreibung>Überraschungssport mit Gefahr</Beschreibung>
             <Art>Sport</Art>
             <Schwierigkeit>Sehr schwer</Schwierigkeit>
-            <Vote>4</Vote>
         </activity>
 
         <activity>
@@ -64,7 +58,6 @@
             </Beschreibung>
             <Art>Sport</Art>
             <Schwierigkeit>Sehr schwer</Schwierigkeit>
-            <Vote>12</Vote>
         </activity>
 
         <activity>
@@ -75,7 +68,6 @@
             </Beschreibung>
             <Art>Event</Art>
             <Schwierigkeit>Mittel</Schwierigkeit>
-            <Vote>9</Vote>
         </activity>
 
         <activity>
@@ -85,6 +77,5 @@
                 Kommen Sie vorbei und lassen Sie sich überraschen &lt;3</Beschreibung>
             <Art>Event</Art>
             <Schwierigkeit>Sehr einfach</Schwierigkeit>
-            <Vote>20</Vote>
         </activity>
     </activities>
