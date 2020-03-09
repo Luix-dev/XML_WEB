@@ -1,3 +1,14 @@
-Flag fuer Sportarten die Blindengerecht sind!
-Schwierigkeitsgrad der Sportarten
-Audio Bilder UND Navigation
+ToDo:
+-- Wie testen wir den Audioreader? 
+-- Bilder UND Navigation
+
+-- PHP XML Laden
+
+-- Abstimmung --> In XML schreiben
+-- aus XML zu SVG darstellen
+
+-- Anmeldeformular Sport
+-- Reservation Zimmer
+-- Mail senden mit gewaehltem Format
+
+-- Von Sport zu reservation

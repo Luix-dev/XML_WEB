@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<?xml-stylesheet type="text/xsl" href="wassersport_pie.xsl"
+<?xml-stylesheet type="text/xsl" href="xsl/wassersport_new.xsl"
     xmlns="activities.xsd"
     targetNamespace="activities.xsd"
     elementFormDefault="qualified"?>
@@ -7,7 +7,8 @@
     <activities>
         <activity>
             <Title>Wasserballett</Title>
-            <Beschreibung>Diese <b>Sportart</b> ist spannend</Beschreibung>
+            <Beschreibung>Fühlen Sie sich leicht wie eine Feder im Wasserbalett.
+                Lernen Sie, sich graziös im Wasser zu bewegen. Keine Vorkenntnisse von Nöten</Beschreibung>
             <Art>Sport</Art>
             <Schwierigkeit>Sehr einfach</Schwierigkeit>
             <Vote>10</Vote>
@@ -15,7 +16,9 @@
 
         <activity>
             <Title>Wasserball</Title>
-            <Beschreibung>LOREM</Beschreibung>
+            <Beschreibung>Die Regeln sind einfach, es gibt zwei Teams, ein Netz und ein Ball.
+                Das Ziel ist es, dass der Ball auf der anderen Seite das Wasser berührt.
+                Spass vorprogrammiert</Beschreibung>
             <Art>Sport</Art>
             <Schwierigkeit>Mittel</Schwierigkeit>
             <Vote>15</Vote>
@@ -23,7 +26,7 @@
 
         <activity>
             <Title>Aerobics</Title>
-            <Beschreibung>IPSUM</Beschreibung>
+            <Beschreibung>Testen Sie ihre Beweglichkeit im Wasser</Beschreibung>
             <Art>Sport</Art>
             <Schwierigkeit>Sehr schwierig</Schwierigkeit>
             <Vote>5</Vote>
@@ -31,7 +34,8 @@
 
         <activity>
             <Title>Schwimmen</Title>
-            <Beschreibung>Im Pool cool schwimmen</Beschreibung>
+            <Beschreibung>Plausch-Runde im Hallenbad, schwimmen Sie Ihre eigenen Bahnen
+                mit in Ihrer eigenen Geschwindigkeit und geniessen Sie das warme Wasser</Beschreibung>
             <Art>Sport</Art>
             <Schwierigkeit>Mittel</Schwierigkeit>
             <Vote>0</Vote>
@@ -66,7 +70,7 @@
         <activity>
             <Title>Wellenbad</Title>
             <Beschreibung>Ein riesen Erlebnis für jeden. 
-                Das Wellenbad hat verschiedene tiefen und ist
+                Das Wellenbad hat verschiedene Tiefen und ist
                 für jeden zugänglich
             </Beschreibung>
             <Art>Event</Art>
@@ -78,7 +82,7 @@
             <Title>Speeddating</Title>
             <Beschreibung>Ein Spass für alle Singles!
                 Speeddating im Hallenbad ist angesagt.
-                Kommt vorbei und last euch überraschen &lt;3</Beschreibung>
+                Kommen Sie vorbei und lassen Sie sich überraschen &lt;3</Beschreibung>
             <Art>Event</Art>
             <Schwierigkeit>Sehr einfach</Schwierigkeit>
             <Vote>20</Vote>

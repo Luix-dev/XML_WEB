@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="events.xsl"
+    xmlns="events.xsd"
+    targetNamespace="events.xsd"
+    elementFormDefault="qualified"?>
+
+    <events>
+        <!-- Muss mit Daten gefüllt werden -->
+    </events>

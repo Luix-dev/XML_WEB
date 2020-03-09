@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="https://stahlreck.internet-box.ch/xml/reservations"
+           targetNamespace="https://stahlreck.internet-box.ch/xml/reservations"
+           elementFormDefault="qualified">
+    <xs:element name="rooms">
+        <xs:complexType>
+            <xs:sequence minOccurs="1" maxOccurs="unbounded">
+                <xs:element ref="room" />
+            </xs:sequence>
+            
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="room">
+        <xs:complexType>
+            <xs:all>
+                <xs:element name="size" type="xs:integer" />
+                <xs:element name="category" type="category" />
+                <xs:element name="reservationStatus" type="reservationStatus" />
+                <xs:element name="accessibilityDesc" type="xs:string" />
+                <xs:element ref="reservation" />
+            </xs:all>
+            <xs:attribute name="number" type="xs:integer" use="required" />
+            <xs:attribute name="accessibility" type="xs:boolean" use="required" />
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name="category">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Einzelzimmer" />
+            <xs:enumeration value="Doppelzimmer" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="reservationStatus">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Verfügbar" />
+            <xs:enumeration value="Belegt" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element name="reservation">
+        <xs:complexType>
+            <xs:sequence minOccurs="0" maxOccurs="1">
+                <xs:element name="name" type="xs:string" />
+                <xs:element name="surname" type="xs:string" />
+                <xs:element name="gender" type="xs:string" />
+                <xs:element name="ort" type="xs:string" />
+                <xs:element name="plz" type="xs:positiveInteger" />
+                <xs:element name="address" type="xs:string" />
+                <xs:element name="tel" type="xs:positiveInteger" />
+                <xs:element name="email" type="xs:string" />
+                <xs:element name="sport" type="xs:string" />
+                <xs:element name="reservationDate" type="xs:dateTime" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
