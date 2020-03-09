@@ -30,7 +30,7 @@
         <p><i><xsl:value-of select="Beschreibung" /></i></p>
         <p>Schwierigkeit: <xsl:value-of select="Schwierigkeit" /> </p>
         <xsl:variable name="link" select="Title"/>
-        <xsl:variable name="alt" select="Beschreibung"/>
+        <xsl:variable name="alt" select="alt"/>
         <img src="bilder/{$link}.jpg"
             alt="{$alt}"
             class="img"/>

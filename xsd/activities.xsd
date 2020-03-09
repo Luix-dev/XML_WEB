@@ -33,6 +33,7 @@
                         <xs:list itemType="Schwierigkeit"/>
                     </xs:simpleType>
                 </xs:element>
+                <xs:element name="alt" type="xs:string"/>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
