@@ -129,6 +129,29 @@ img {
     }
 }
 
+.fancybox-content {
+    img {
+        max-height: 50px;
+        max-width: 50px;
+        overflow: hidden;
+        margin: 0 10 0 0;
+    }
+    .icon {
+        max-height: 15px;
+        max-width: 15px;
+        overflow: hidden;
+        margin: 0;
+        display: inline-block;
+        margin-right: 10;
+    }
+    p{
+        display: inline-block;
+        max-width: 800px;
+        color: black;
+        font-weight: 400;
+    }
+}
+
 .row.content {
     height: 100%;
     display: flex;
