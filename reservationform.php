@@ -32,7 +32,7 @@ $rooms = simplexml_load_file("./reservation.xml") or die("Fehler: Datei nicht ge
                                     <a href="./index.html">HOME</a>
                                 </li>
                                 <li>
-                                    <a href="./wassersport.xml">ANGEBOT</a>
+                                    <a href="./sports.php">ANGEBOT</a>
                                 </li>
                                 <li>
                                     <a href="./events.xml">EVENTS</a>

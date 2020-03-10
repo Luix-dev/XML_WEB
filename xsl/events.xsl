@@ -47,7 +47,7 @@
                                     <a href="./index.html">HOME</a>
                                 </li>
                                 <li>
-                                    <a href="./wassersport.xml">ANGEBOT</a>
+                                    <a href="./sports.php">ANGEBOT</a>
                                 </li>
                                 <li class="active">
                                     <a href="#">EVENTS</a>
