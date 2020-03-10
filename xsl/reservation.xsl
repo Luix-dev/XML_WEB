@@ -57,8 +57,6 @@
                             <section>
                                 <h2>Buchen Sie sich jetzt ihr bequemes Zimmer!</h2>
                                 <xsl:apply-templates select="nsm:room" />
-                                <h2>Sie können ebenfalls eine unserer Hallen nur für sich und ihre Gruppe reservieren!</h2>
-                                <p>Platzhalter (optional): Reservation von Sporthallen wenn nötig?</p>
                             </section>
                         </div>
                     </div>
@@ -100,24 +98,30 @@
         </div>
         <div class="raumaktionen">
             <xsl:variable name="roomID" select="@number" />
-            <button type="button" onclick="window.location='reservationform.php?roomid={$roomID}'">Zimmer reservieren</button>
-            <a data-fancybox="" data-src="#hidden-content" href="javascript:;">Mehr anzeigen...</a>
+            <button type="button" onclick="window.location='reservationform.php?roomid={$roomID}'">Zimmer reservieren</button><br />
+            <a data-fancybox="" data-src="#hidden-content{$roomID}" href="javascript:;">Mehr anzeigen...</a>
         </div>
         <div class="more-content">
-            <div style="display: none;" id="hidden-content">
+            <xsl:variable name="roomID2" select="@number" />
+            <div style="display: none;" id="hidden-content{$roomID2}">
                 <h2>Zimmer <xsl:value-of select="@number" /></h2>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</p>
                 <div>
+                    <img class="icon" src="bilder/zimmericons/person.png" alt="Zimmerkategorie" />
                     <p><xsl:value-of select="nsm:category" /></p>
                 </div>
                 <div>
-                    <p><xsl:value-of select="nsm:size" /> m<sup>2</sup></p>
+                    <img class="icon" src="bilder/zimmericons/size.png" alt="Zimmergrösse" />
+                    <p>Raumgrösse beträgt: <xsl:value-of select="nsm:size" /> m<sup>2</sup></p>
                 </div>
                 <div>
                     <xsl:if test="@accessibility = 'true'">
                         <img src="bilder/zimmericons/accessible.png" alt="Behindertengerecht" />
+                        <p>Dieses Zimmer ist für Behinderte geeignet.</p>
                     </xsl:if>
                     <xsl:if test="@accessibility = 'false'">
                         <img src="bilder/zimmericons/not-accessible.png" alt="Nicht behindertengerecht" />
+                        <p>Dieses Zimmer ist nicht für Behinderte geeignet.</p>
                     </xsl:if>
                 </div>
                 <div>
