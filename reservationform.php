@@ -96,6 +96,7 @@ $rooms = simplexml_load_file("./reservation.xml") or die("Fehler: Datei nicht ge
                                     </select><br />
                                     <input type="submit" value="Reservieren">
                                 </form>
+                                <a href="./reservation.xml">Zurück</a>
                             </section>
                         </div>
                     </div>

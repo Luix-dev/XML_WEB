@@ -27,7 +27,7 @@ $child->addChild("tel", $telefon);
 $child->addChild("email", $email);
 $child->addChild("sport", $sport);
 $child->addChild("reservationDate", $date);
-#$rooms->asXML("./reservation.xml");
+$rooms->asXML("./reservation.xml");
 $rooms->room[$roomid]->asXML("./singleReservation.xml");
 
 #Generate PDF
