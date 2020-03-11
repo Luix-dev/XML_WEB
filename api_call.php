@@ -27,8 +27,6 @@
         // create an instance of the FOP client and perform service request.
         $serviceClient = new FOPServiceClient();
         $pdfFile = $serviceClient->processFile($foFile);
-    } else {
-        $pdfFile = 'sports.pdf';
     }
 
     // generate HTML output and show results of service request
