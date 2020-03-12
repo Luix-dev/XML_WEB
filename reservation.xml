@@ -15,6 +15,7 @@
         <category>Einzelzimmer</category>
         <accessibilityDesc>Barrierefreies Zimmer und Badezimmer</accessibilityDesc>
         <reservationStatus>Verfügbar</reservationStatus>
+        <reservation/>
     </room>
     <room number="03" accessibility="true">
         <size>18</size>
