@@ -31,7 +31,7 @@ $rooms = simplexml_load_file("./reservation.xml") or die("Fehler: Datei nicht ge
                             <h4>XML Blockwoche</h4>
                             <ul class="nav flex-column">
                                 <li>
-                                    <a href="./index.html">HOME</a>
+                                    <a href="./index.xhtml">HOME</a>
                                 </li>
                                 <li>
                                     <a href="./sports.php">ANGEBOT</a>
@@ -43,7 +43,7 @@ $rooms = simplexml_load_file("./reservation.xml") or die("Fehler: Datei nicht ge
                                     <a href="./reservation.xml">RESERVATION</a>
                                 </li>
                                 <li>
-                                    <a href="./about.html">ABOUT</a>
+                                    <a href="./about.xhtml">ABOUT</a>
                                 </li>
                             </ul>
                             <br />
