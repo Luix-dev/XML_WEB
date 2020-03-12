@@ -1,35 +1,33 @@
-<?xml version="1.0" ?>
+<?xml version="1.0"?>
 <?xml-stylesheet type="text/xsl" href="xsl/reservation.xsl" ?>
 <!-- Verfügbare Zimmer mit Infos und Reservierungsstatus -->
-<rooms  xmlns="https://stahlreck.internet-box.ch/xml/reservations"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="https://stahlreck.internet-box.ch/xml/reservations xsd/reservations.xsd">
+<rooms xmlns="https://stahlreck.internet-box.ch/xml/reservations" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="https://stahlreck.internet-box.ch/xml/reservations xsd/reservations.xsd">
     <room number="01" accessibility="false">
         <size>14</size>
         <category>Einzelzimmer</category>
-        <reservationStatus>Verfügbar</reservationStatus>
+        <reservationStatus>Verf&#xFC;gbar</reservationStatus>
         <accessibilityDesc>Nicht behindertengerecht</accessibilityDesc>
-        <reservation></reservation>
+        <reservation/>
     </room>
     <room number="02" accessibility="true">
         <size>16</size>
         <category>Einzelzimmer</category>
-        <reservationStatus>Verfügbar</reservationStatus>
         <accessibilityDesc>Barrierefreies Zimmer und Badezimmer</accessibilityDesc>
-        <reservation></reservation>
+        <reservationStatus>Verf&#xFC;gbar</reservationStatus>
     </room>
     <room number="03" accessibility="true">
         <size>18</size>
         <category>Doppelzimmer</category>
-        <reservationStatus>Verfügbar</reservationStatus>
+        <reservationStatus>Verf&#xFC;gbar</reservationStatus>
         <accessibilityDesc>Barrierefreies Zimmer und Badezimmer</accessibilityDesc>
-        <reservation></reservation>
+        <reservation/>
     </room>
     <room number="04" accessibility="true">
         <size>22</size>
         <category>Doppelzimmer</category>
-        <reservationStatus>Verfügbar</reservationStatus>
+        <reservationStatus>Verf&#xFC;gbar</reservationStatus>
         <accessibilityDesc>Barrierefreies Zimmer und Badezimmer</accessibilityDesc>
-        <reservation></reservation>
+        <reservation/>
     </room>
 </rooms>
