@@ -1,17 +1,14 @@
-<html lang="en">
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de">
     <!-- Header mit meta und Links-->
     <head>
         <title>Wassersport!</title>
-        <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
-                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
-                integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
-                integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="scss/style.css" />
         <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
       </head>
@@ -46,25 +43,25 @@
                     </h4>
                     <hr />
                     
-                    <section>
+                    <div class="section">
                         <div class="slideshow" style="max-width:1000px; max-height: 450px">
-                            <img class="mySlides" src="bilder/slideshow/Bahnschwimmen.jpg" style="max-height:100%" />
-                            <img class="mySlides" src="bilder/slideshow/Tauchen.jpg" style="max-height:100%" />
-                            <img class="mySlides" src="bilder/slideshow/Schwimmen.jpg" style="max-height:100%" />
+                            <img class="mySlides" alt="Bahnschwimmen" src="bilder/slideshow/Bahnschwimmen.jpg" style="max-height:100%" />
+                            <img class="mySlides" alt="Tauchen" src="bilder/slideshow/Tauchen.jpg" style="max-height:100%" />
+                            <img class="mySlides" alt="Schwimmen" src="bilder/slideshow/Schwimmen.jpg" style="max-height:100%" />
                         </div>
 
-                        <script>
+                        <script type="text/javascript">
                             var myIndex = 0;
                             carousel();
 
                             function carousel() {
                                 var i;
                                 var x = document.getElementsByClassName("mySlides");
-                                for (i = 0; i < x.length; i++) {
+                                for (i = 0; i &lt; x.length; i++) {
                                     x[i].style.display = "none";
                                 }
                                 myIndex++;
-                                if (myIndex > x.length) {myIndex = 1}
+                                if (myIndex &gt; x.length) {myIndex = 1}
                                 x[myIndex-1].style.display = "block";
                                 setTimeout(carousel, 4000); // Change image every 4 seconds
                             }
@@ -80,21 +77,18 @@
 
                             Raumreservierungen in unserem Hotel nebenan mit behindertengerechten Zimmern sind ebenfalls
                             möglich, reservieren Sie noch heute schnell und einfach ein Zimmer.<br/>
-
-                            <h3>Abwechslungsreiche Unterhaltung</h3>
+                        </p>
+                        <h3>Abwechslungsreiche Unterhaltung</h3>
+                        <p>
                             Möchten Sie gerne eine bestimmte Sportart spielen? Dann nutzen Sie doch unsere Event-Seite,
                             wo sie über kommende Events mitbestimmen können.
 
                             Also, worauf warten sie noch? Los gehts!
                             <br/><br/><br/><br/>
                         </p>
-                    </section>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <footer class="container-fluid">
-            <p>Footer Text</p>
-        </footer>
     </body>
 </html>

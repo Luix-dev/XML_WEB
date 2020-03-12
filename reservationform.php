@@ -1,4 +1,6 @@
 <?php
+//ToDo: Datum (von/bis) für Zimmerreservation
+// escapen von allem
 $sportarten = simplexml_load_file("./wassersport.xml") or die("Fehler: Datei nicht gefunden");
 $rooms = simplexml_load_file("./reservation.xml") or die("Fehler: Datei nicht gefunden");
 (isset($_GET["roomid"])) ? $roomid = $_GET["roomid"] : $roomid=01;
