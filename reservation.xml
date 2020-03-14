@@ -6,7 +6,7 @@
     <room number="01" accessibility="false">
         <size>14</size>
         <category>Einzelzimmer</category>
-        <reservationStatus>Verf&#xFC;gbar</reservationStatus>
+        <reservationStatus>Verfügbar</reservationStatus>
         <accessibilityDesc>Nicht behindertengerecht</accessibilityDesc>
         <reservation/>
     </room>
@@ -14,19 +14,20 @@
         <size>16</size>
         <category>Einzelzimmer</category>
         <accessibilityDesc>Barrierefreies Zimmer und Badezimmer</accessibilityDesc>
-        <reservationStatus>Verf&#xFC;gbar</reservationStatus>
+        <reservationStatus>Verfügbar</reservationStatus>
+        <reservation/>
     </room>
     <room number="03" accessibility="true">
         <size>18</size>
         <category>Doppelzimmer</category>
-        <reservationStatus>Verf&#xFC;gbar</reservationStatus>
+        <reservationStatus>Verfügbar</reservationStatus>
         <accessibilityDesc>Barrierefreies Zimmer und Badezimmer</accessibilityDesc>
         <reservation/>
     </room>
     <room number="04" accessibility="true">
         <size>22</size>
         <category>Doppelzimmer</category>
-        <reservationStatus>Verf&#xFC;gbar</reservationStatus>
+        <reservationStatus>Verfügbar</reservationStatus>
         <accessibilityDesc>Barrierefreies Zimmer und Badezimmer</accessibilityDesc>
         <reservation/>
     </room>
