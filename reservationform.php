@@ -75,6 +75,10 @@ $rooms = simplexml_load_file("./reservation.xml") or die("Fehler: Datei nicht ge
                                     <label for="female">Frau</label><br>
                                     <input type="radio" id="other" name="gender" value="other">
                                     <label for="other">Other</label><br />
+                                    <label>Von:</label>
+                                    <input type="date" id="from" name="from" min="<?php echo date('Y-m-d');?>" required="required" />
+                                    <label>Bis:</label>
+                                    <input type="date" id="to" name="to" min="<?php echo date('Y-m-d');?>" required="required" /><br />
                                     <label>Zimmer:</label>
                                     <select id="room" name="room">
                                         <?php foreach($rooms->children() as $room) {
