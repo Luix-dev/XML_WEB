@@ -5,22 +5,20 @@ $sportarten = simplexml_load_file("./wassersport.xml") or die("Fehler: Datei nic
 $rooms = simplexml_load_file("./reservation.xml") or die("Fehler: Datei nicht gefunden");
 (isset($_GET["roomid"])) ? $roomid = $_GET["roomid"] : $roomid=01;
 ?>
-<html lang="en">
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de">
             <!-- Header mit meta und Links-->
             <head>
                 <title>Wassersport!</title>
                 <meta charset="utf-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
-                integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
-                        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
-                        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
-                        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+                <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+                <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+                <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
                 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-                <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>                 
+                <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>                 
                 <link rel="stylesheet" href="scss/style.css" />
                 <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
             </head>
@@ -31,7 +29,7 @@ $rooms = simplexml_load_file("./reservation.xml") or die("Fehler: Datei nicht ge
                             <h4>XML Blockwoche</h4>
                             <ul class="nav flex-column">
                                 <li>
-                                    <a href="./index.html">HOME</a>
+                                    <a href="./index.xhtml">HOME</a>
                                 </li>
                                 <li>
                                     <a href="./sports.php">ANGEBOT</a>
@@ -43,7 +41,7 @@ $rooms = simplexml_load_file("./reservation.xml") or die("Fehler: Datei nicht ge
                                     <a href="./reservation.xml">RESERVATION</a>
                                 </li>
                                 <li>
-                                    <a href="./about.html">ABOUT</a>
+                                    <a href="./about.xhtml">ABOUT</a>
                                 </li>
                             </ul>
                             <br />
