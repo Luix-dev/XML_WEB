@@ -68,7 +68,6 @@ if($xml->schemaValidate($xsd)) {
         $serviceClient = new FOPServiceClient();
         $pdfFile = $serviceClient->processFile($foFile);
 
-    #TODO: child + fo = PDF
     header('Content-type: application/pdf');
     header('Content-Disposition: attachment; filename=reservation.pdf');
     header('Content-Transfer-Encoding: binary');
