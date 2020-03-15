@@ -78,6 +78,6 @@ if($xml->schemaValidate($xsd)) {
     header('Location: reservation.xml');
 }
 else {
-    echo "Mit Ihren eingegeben Daten stimmt etwas nicht!";
+    echo "Mit Ihren eingegeben Daten stimmt etwas nicht! Bitte überprüfen Sie, dass alle Daten richtig eingeben wurden.";
 }
 ?>

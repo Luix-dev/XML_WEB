@@ -4,7 +4,7 @@
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:nsm="https://stahlreck.internet-box.ch/xml/reservations">
     <xsl:template match="/nsm:rooms">
-        <html lang="en">
+        <html lang="de">
             <!-- Header mit meta und Links-->
             <head>
                 <title>Wassersport!</title>
@@ -98,7 +98,12 @@
         </div>
         <div class="raumaktionen">
             <xsl:variable name="roomID" select="@number" />
-            <button type="button" onclick="window.location='reservationform.php?roomid={$roomID}'">Zimmer reservieren</button><br />
+            <xsl:if test="nsm:reservationStatus = 'Verfügbar'">
+                <button type="button" onclick="window.location='reservationform.php?roomid={$roomID}'">Zimmer reservieren</button><br />
+            </xsl:if>
+            <xsl:if test="nsm:reservationStatus = 'Belegt'">
+                <button type="button" disabled="disabled" onclick="window.location='reservationform.php?roomid={$roomID}'">Zimmer reservieren</button><br />
+            </xsl:if>
             <a data-fancybox="" data-src="#hidden-content{$roomID}" href="javascript:;">Mehr anzeigen...</a>
         </div>
         <div class="more-content">
@@ -135,7 +140,12 @@
                 </div>
                 <div class="raumaktionen">
                     <xsl:variable name="roomID" select="@number" />
-                    <button type="button" onclick="window.location='reservationform.php?roomid=$roomID'">Zimmer reservieren</button>
+                    <xsl:if test="nsm:reservationStatus = 'Verfügbar'">
+                        <button type="button" onclick="window.location='reservationform.php?roomid={$roomID}'">Zimmer reservieren</button><br />
+                    </xsl:if>
+                    <xsl:if test="nsm:reservationStatus = 'Belegt'">
+                        <button type="button" disabled="disabled" onclick="window.location='reservationform.php?roomid={$roomID}'">Zimmer reservieren</button><br />
+                    </xsl:if>
                 </div>
             </div>
         </div>
