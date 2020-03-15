@@ -44,6 +44,9 @@
                             Zimmer: <xsl:value-of select="@number"/>
                         </fo:block>
                         <fo:block>
+                            Von <xsl:value-of select="reservation/reservationFrom"/> bis <xsl:value-of select="reservation/reservationTo"/>
+                        </fo:block>
+                        <fo:block>
                             Name: <xsl:value-of select="reservation/name"/>
                         </fo:block>
                         <fo:block>
