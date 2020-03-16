@@ -80,16 +80,10 @@
                                         <input type="radio" name="res" value="2" onclick="get_votes(this.value)"></input>
                                     </form>
                                 </div>
-                                <h2>Events</h2>
-                                <p>Platzhalter: Aktuelle events</p>
                             </section>
                         </div>
                     </div>
                 </div>
-
-                <footer class="container-fluid">
-                    <p>Footer Text</p>
-                </footer>
             </body>
         </html>
     </xsl:template>
