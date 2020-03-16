@@ -73,11 +73,13 @@
                                 <div id="ajax_poll">
                                     <form>
                                         <h4><xsl:value-of select="(//Title)[1]"/></h4>
-                                        <input type="radio" name="res" value="0" onclick="get_votes(this.value)"></input>                      
+                                        <input type="radio" name="res" value="0"></input>                      
                                         <h4><xsl:value-of select="(//Title)[2]"/></h4>
-                                        <input type="radio" name="res" value="1" onclick="get_votes(this.value)"></input>
+                                        <input type="radio" name="res" value="1"></input>
                                         <h4><xsl:value-of select="(//Title)[3]"/></h4>
-                                        <input type="radio" name="res" value="2" onclick="get_votes(this.value)"></input>
+                                        <input type="radio" name="res" value="2"></input>
+                                        <br/>
+                                        <input type="button" name="res" value="Bestätigen" onclick="get_votes(res.value)"></input>
                                     </form>
                                 </div>
                             </section>
